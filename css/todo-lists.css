@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+
+/* CSS for TODO list page */
+body {
+    background-color: #F2F2F7;
+    font-family: "Gabarito", sans-serif;
+}
+
+.top-header {
+    background-color: #3C62DD;
+    padding: 1.5em 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-header a {
+    color: white;
+    font-size: 1.5em;
+    margin: 1em;
+    text-decoration: none;
+    transition: ease .3s;
+}
+
+.top-header a:hover {
+    opacity: 0.7;
+}
+
+/* .todo-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 2em;
+} */
+
+.todo-cards-container .todo-card {
+    background-color: white;
+    margin: 2em;
+    padding: 1.5em;
+    border-radius: 0.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 8%);
+}
+
+.todo-cards-container .todo-card .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.todo-cards-container .todo-card .heading a {
+    color: black;
+    font-size: 1.5em;
+}
+
+.todo-cards-container .todo-card .task {
+    background-color: #F2AE2F;
+    padding: 1.5em;
+    margin-top: 1.5em;
+    border-radius: 0.5em;
+}
+
+.todo-cards-container .todo-card .task .task-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.75em;
+}
+
+.todo-cards-container .todo-card .task .task-heading a {
+    font-size: 1.5em;
+    margin-right: 0.5em;
+    color: rgba(0, 0, 0, 50%);
+    transition: ease .3s;
+}
+
+.todo-cards-container .todo-card .task .task-heading a:hover {
+    color: rgba(0, 0, 0, 100%);
+}
+
+.todo-cards-container .todo-card .task .task-heading h3 {
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+.todo-cards-container .todo-card .task .description {
+    margin-bottom: 1.25em;
+    color: rgba(0, 0, 0, 80%);
+}
+
+.todo-cards-container .todo-card .task .tags-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+
+.todo-cards-container .todo-card .task .tags-container a {
+    font-size: small;
+    text-decoration: none;
+    color: #F2AE2F;
+    background-color: white;
+    padding: 0.5em 1em;
+    margin-right: 1em;
+    border-radius: 4px;
+}
+
+.todo-cards-container .todo-card .task .due-date span .time {
+    font-weight: normal;
+    color: rgba(0, 0, 0, 50%);
+}

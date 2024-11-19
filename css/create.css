@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+
+/* CSS for TODO list page */
+body {
+    background-color: #F2F2F7;
+    font-family: "Gabarito", sans-serif;
+}
+
+.top-header {
+    background-color: #3C62DD;
+    padding: 1.5em 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-header a {
+    color: white;
+    font-size: 1.5em;
+    margin: 1em;
+    text-decoration: none;
+    transition: ease .3s;
+}
+
+.top-header a:hover {
+    opacity: 0.7;
+}
+
+.outter-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+    background-color: white;
+    margin: 2em;
+    padding: 1.5em;
+    border-radius: 0.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 8%);
+}
+
+.form-container h2 {
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #555;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+textarea {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 2em;
+    border: 1px solid #ddd;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.button-group button {
+    border: none;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: #F95308;
+    padding: 1em 2em;
+    margin-right: 1em;
+    border-radius: 2em;
+    letter-spacing: 0.1em;
+    transition: ease .3s;
+    cursor: pointer;
+}
+
+.button-group button:hover {
+    background-color: #009C53;
+}

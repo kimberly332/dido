@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Load stylesheet here -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/create.css">
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/65f54478f1.js" crossorigin="anonymous"></script>
+
+    <title>Dido - Create New TODO List</title>
+</head>
+<body>
+    <div class="top-header">
+        <img src="/assets/Header-Logo.svg" alt="logo">
+        <div class="main-nav">
+            <a href="create.html">Create</a>
+            <a href="todo-lists.html">TODO List</a>
+            <a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+        </div>
+    </div>
+
+    <div class="outter-wrapper">
+        <div class="form-container">
+            <h2>Create New TODO List</h2>
+            
+            <form id="todoForm">
+                <div class="form-group">
+                    <label for="listName">List Name:</label>
+                    <input type="text" id="listName" name="listName" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tags">Tags (separate by comma):</label>
+                    <input type="text" id="tags" name="tags" placeholder="e.g. urgent, work, personal">
+                </div>
+    
+                <div class="form-group">
+                    <label for="dueDate">Due Date:</label>
+                    <input type="date" id="dueDate" name="dueDate" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="dueTime">Due Time:</label>
+                    <input type="time" id="dueTime" name="dueTime" required>
+                </div>
+    
+                <div class="button-group">
+                    <button type="button" class="cancel" onclick="window.location.href='index.html'">Cancel</button>
+                    <button type="submit" class="add">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>  
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>
